@@ -67,7 +67,7 @@ def convert(snippet,phrases):#snippet片段。定义一个函数内部两个变�
 try:
     while True:#布尔值为真的时候
         snippets = list(PHRASES.keys())#字典PHRASES上面调用keys()，以列表形式返回所有的键,并赋值给变量snippets
-        random.shuffle(snippets)#在变量snippets上random.shuffle()，将所有元素随机排列
+        random.shuffle(snippets)#在边路snippets上random.shuffle()，将所有元素随机排列
 
         for snippet in snippets:#snippets每一个元素代入snippet中
             phrase = PHRASES[snippet]#取出字典PHRASES中对象snippet并将其赋值给phrase
